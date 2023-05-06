@@ -1,0 +1,152 @@
+[05-May-2023 20:56:03 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 20:56:03 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 20:59:31 America/Fortaleza] PHP Parse error:  Unmatched '}' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 87
+[05-May-2023 21:00:10 America/Fortaleza] PHP Parse error:  Unmatched '}' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 87
+[05-May-2023 21:01:24 America/Fortaleza] PHP Warning:  require_once(/home2/ikdmeu67/public_html/content/class/funcoes../../../start.php): Failed to open stream: No such file or directory in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 2
+[05-May-2023 21:01:24 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ikdmeu67/public_html/content/class/funcoes../../../start.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:2
+Stack trace:
+#0 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 2
+[05-May-2023 21:03:00 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:03:00 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:03:26 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:03:26 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:03:37 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:03:37 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:01 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:01 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:12 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:12 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:24 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:24 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:34 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:34 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:58 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:04:58 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:05:36 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:05:36 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:05:47 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:05:47 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:06:55 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 21:06:55 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:17:08 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type bool in /home2/ikdmeu67/public_html/content/class/funcoes/login.php on line 16
+[05-May-2023 22:18:49 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:18:49 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:25:04 America/Fortaleza] PHP Warning:  Undefined array key "identificador" in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:25:04 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:31:53 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:32:22 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:32:49 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:77
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(77): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 77
+[05-May-2023 22:33:00 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:76
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(76): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 76
+[05-May-2023 22:33:28 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:33:36 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:33:46 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:33:58 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:34:08 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:34:23 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:34:36 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79
+[05-May-2023 22:34:46 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nome_pet' in 'field list' in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php:79
+Stack trace:
+#0 /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php(79): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/content/class/funcoes/perdi.php on line 79

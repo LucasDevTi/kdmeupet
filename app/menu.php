@@ -1,0 +1,54 @@
+<?php
+
+namespace App;
+
+require_once __DIR__ . '../../start.php';
+
+class Menu
+{
+    public static function nav()
+    {   
+        if (isset($_SESSION['nome']) && !empty($_SESSION['nome'])) {
+            $mensagem = "Olá ".$_SESSION['nome']."";
+            $pagina = "minha_conta.php";
+        }else{
+            $mensagem = "Login";
+            $pagina = "login.php";
+        }
+
+        return '
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #04D395; padding:2em;">
+                <a class="navbar-brand" href="index.php">
+                    <img src="logomeu.png" width="130" height="auto" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="caes.php">Cachorro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gatos.php">Gato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="passaros.php">Pássaro</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Pesquise por um pet procurado" aria-label="Pesquisar">
+                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button> -->
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="perdi.php">Perdi meu Pet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="'.$pagina.'">'.$mensagem.'</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>';
+    }
+}

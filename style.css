@@ -1,0 +1,27 @@
+body {
+    font-family: "Bebas Neue", cursive;
+    font-family: "Sacramento", cursive;
+    font-family: "Work Sans", sans-serif;
+    background-color: #e0e0e080;
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        
+    }
+
+    .nav-link:hover {
+        color: yellow;
+    }
+
+    #search {
+        width: 24em;
+    }
+
+    #navbarNav {
+        margin-left: 4em;
+    }
+}

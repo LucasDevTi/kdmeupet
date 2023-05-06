@@ -1,0 +1,101 @@
+[05-May-2023 20:31:31 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:19
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(19): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 19
+[05-May-2023 20:31:32 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:19
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(19): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 19
+[05-May-2023 20:31:36 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:19
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(19): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 19
+[05-May-2023 20:33:52 America/Fortaleza] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/ikdmeu67/public_html/start.php on line 10
+[05-May-2023 20:33:52 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:20
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(20): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 20
+[05-May-2023 20:34:02 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:20
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(20): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 20
+[05-May-2023 20:34:14 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:20
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(20): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 20
+[05-May-2023 20:34:15 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:20
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(20): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 20
+[05-May-2023 20:34:16 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:20
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(20): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 20
+[05-May-2023 20:34:17 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:20
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(20): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 20
+[05-May-2023 20:34:33 America/Fortaleza] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ikdmeu67_ldl_pet.perdidos' doesn't exist in /home2/ikdmeu67/public_html/index.php:19
+Stack trace:
+#0 /home2/ikdmeu67/public_html/index.php(19): PDOStatement->execute()
+#1 {main}
+  thrown in /home2/ikdmeu67/public_html/index.php on line 19
+[05-May-2023 20:52:57 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 20:53:05 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 20:55:03 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 20:55:09 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 20:55:20 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:07:00 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:07:05 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:07:16 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:07:42 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:08:22 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[05-May-2023 21:08:44 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 18
+[05-May-2023 21:09:14 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[05-May-2023 21:14:35 America/Fortaleza] PHP Fatal error:  Uncaught Error: Undefined constant "PL_PATH_ADMIM" in /home2/ikdmeu67/public_html/perdi.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:14:46 America/Fortaleza] PHP Fatal error:  Uncaught Error: Undefined constant "PL_PATH_ADMIM" in /home2/ikdmeu67/public_html/perdi.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:14:53 America/Fortaleza] PHP Fatal error:  Uncaught Error: Undefined constant "PL_PATH_ADMIM" in /home2/ikdmeu67/public_html/perdi.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:15:18 America/Fortaleza] PHP Fatal error:  Uncaught Error: Undefined constant "PL_PATH_ADMIM" in /home2/ikdmeu67/public_html/perdi.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:15:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Undefined constant "PL_PATH_ADMIM" in /home2/ikdmeu67/public_html/perdi.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:15:31 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:15:35 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:15:45 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:14) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:16:04 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:16:53 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:18:22 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 15
+[05-May-2023 21:18:24 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 15
+[05-May-2023 21:18:53 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:18:53 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[05-May-2023 21:18:55 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:18:55 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[05-May-2023 21:19:10 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:19:10 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[05-May-2023 21:19:12 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:19:12 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[05-May-2023 21:19:13 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 16
+[05-May-2023 21:19:13 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/perdi.php:13) in /home2/ikdmeu67/public_html/perdi.php on line 17
+[06-May-2023 10:33:47 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/ikdmeu67/public_html/animal_perdido.php:14) in /home2/ikdmeu67/public_html/animal_perdido.php on line 16
