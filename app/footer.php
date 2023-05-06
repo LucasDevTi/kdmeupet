@@ -31,6 +31,6 @@ class Footer
                         </div>
                     </div>
                 </div>
-            </footer>';
+            </footer>'; 
     }
 }
