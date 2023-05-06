@@ -16,10 +16,12 @@ class Menu
             $pagina = "login.php";
         }
         // COR VERDE 04D395
+        // azul  #07ABE0
+        // laranja #ffae01
         return '
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #07ABE0; padding:2em;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #BC8958; padding:1em;">
                 <a class="navbar-brand" href="index.php">
-                    <img src="logomeu.png" width="130" height="auto" alt="Logo">
+                    <img src="kdmeupetlogo.png" width="130" height="auto" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
