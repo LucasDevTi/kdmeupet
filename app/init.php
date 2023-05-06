@@ -31,6 +31,7 @@ class Head{
         
         <link rel="stylesheet" href="../style.css">
         
+        <script src="https://kit.fontawesome.com/bd7a79c4c7.js" crossorigin="anonymous"></script>
         </head>';
     }
 }

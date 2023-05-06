@@ -15,9 +15,9 @@ class Menu
             $mensagem = "Login";
             $pagina = "login.php";
         }
-
+        // COR VERDE 04D395
         return '
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #04D395; padding:2em;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #07ABE0; padding:2em;">
                 <a class="navbar-brand" href="index.php">
                     <img src="logomeu.png" width="130" height="auto" alt="Logo">
                 </a>

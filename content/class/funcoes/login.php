@@ -10,17 +10,26 @@ if (isset($_POST)) {
 
     $sql = "SELECT * FROM usuarios WHERE email = ?";
     $smtp = $pdo->prepare($sql);
+    $smtp->execute(array("$email"));
 
-    if($smtp->execute(array("$email"))){
+    if($smtp->rowCount() > 0){
+       
         $usuario = $smtp->fetch();
         $hash = $usuario['senha'];
         if(password_verify($senha, $hash)){
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['identificador']   = $usuario['id'];
             header("Location: ../../../".$_SESSION['pagina_anterior']."");
+        }else{
+            $_SESSION['MSG_TENTATIVA_LOGIN'] = "e-mail ou senha errados!";
+            $_SESSION['MSG_TENTATIVA_LOGIN_2'] = "Por favor tente novamente.";
+            echo "<script>window.location.href='" . PL_PATH_ADMIN . "/login.php'</script>";
         }
     }else{
-        // header("Location: ../../../cadastro.php");
+        
+        $_SESSION['MSG_TENTATIVA_LOGIN'] = "e-mail não encontrado!";
+        $_SESSION['MSG_TENTATIVA_LOGIN_2'] = "Por favor faça um cadastro.";
+        echo "<script>window.location.href='" . PL_PATH_ADMIN . "/login.php'</script>";
     }
 
 }
