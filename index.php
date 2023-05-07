@@ -2,14 +2,17 @@
 require_once __DIR__ . '/app/init.php';
 require_once __DIR__ . '/app/end.php';
 require_once __DIR__ . '/app/menu.php';
+require_once __DIR__ . '/app/footer.php';
 
 use App\End;
 use App\Head;
 use App\Menu;
+use App\Footer;
 
 $Init = new Head();
 $End = new End();
 $Menu = new Menu();
+$Footer = new Footer();
 
 echo $Init->cabecalho();
 
@@ -74,6 +77,7 @@ $animais = $stmt->fetchAll();
 
         <?php } ?>
     </section>
+    <?php echo $Footer->rodape(); ?>
 </body>
 
 <?php

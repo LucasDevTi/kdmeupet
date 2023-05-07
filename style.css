@@ -6,14 +6,23 @@ body {
 }
 
 .footer {
-    position: fixed;
+    /* position: sticky; */
     bottom: 0;
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-}
+    padding: 1em;
 
+    
+}
+@media screen and (max-width: 767px) {
+    /* estilos para dispositivos móveis */
+    .footer {
+      padding: 20px;
+      font-size: 14px;
+    }
+  }
+  
 @media (min-width: 768px) {
     .nav-link {
         color: white;
