@@ -47,11 +47,11 @@ if (isset($_SESSION['MSG_TENTATIVA_LOGIN']) && isset($_SESSION['MSG_TENTATIVA_LO
             <!-- <h2 class="text-center mb-4">Login</h2> -->
             <div class="mb-3 flex-fill">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Seu email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
             </div>
             <div class="mb-3 flex-fill">
                 <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha">
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha" required>
             </div>
             <div class="mb-3">
                 <button type="submit" class="btn btn-primary me-3">Entrar</button>

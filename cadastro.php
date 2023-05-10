@@ -13,13 +13,34 @@ $Menu = new Menu();
 
 echo $Init->cabecalho();
 $pdo = $bd->conectar();
+
+$flag_alerta = false;
+
+if (isset($_SESSION['MSG_TENTATIVA_CADASTRO']) && isset($_SESSION['MSG_TENTATIVA_CADASTRO_2'])) {
+
+    $flag_alerta = true;
+
+    $msg = $_SESSION['MSG_TENTATIVA_CADASTRO'];
+    $msg_2 = $_SESSION['MSG_TENTATIVA_CADASTRO_2'];
+
+    unset($_SESSION['MSG_TENTATIVA_CADASTRO']);
+    unset($_SESSION['MSG_TENTATIVA_CADASTRO_2']);
+}
+$flag_alerta = true;
+
 ?>
 
 <body>
-    
+
     <?php echo $Menu->nav(); ?>
 
-    <section class="my-5 d-flex justify-content-center align-items-center">
+    <section class="my-5 d-flex flex-column justify-content-center align-items-center">
+        <?php if ($flag_alerta) { ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong><?php echo $msg ?></strong> <?php echo $msg_2 ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php } ?>
         <form method="POST" action="/content/class/funcoes/cadastro.php" class="p-4 border rounded-3 d-flex justify-content-between flex-column" style="max-width: 400px;">
             <h2 class="text-center mb-4">Cadastro</h2>
             <div class="mb-3">
