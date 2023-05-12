@@ -23,11 +23,31 @@ $hash = $_GET['get'][0];
 $sql = "SELECT * FROM perdidos WHERE hash = ?";
 $smtp = $pdo->prepare($sql);
 
-if($smtp->execute(array("$hash"))){
+if ($smtp->execute(array("$hash"))) {
     $perdido = $smtp->fetch();
     $foto = $perdido['foto_original'];
-}else{
+
+    $id_dono = $perdido['id_usuario'];
+    $sql = "SELECT telefone FROM usuarios WHERE id = ?";
+    $smtp = $pdo->prepare($sql);
+
+    if ($smtp->execute(array("$id_dono"))) {
+        $user = $smtp->fetch();
+    }
+} else {
     $foto = "";
+}
+
+$num_wpp = preg_replace('/[^0-9]/', '', $user['telefone']);
+
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+$is_mobile = preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $user_agent);
+
+if ($is_mobile) {
+    $urlWpp = 'https://api.whatsapp.com/send?phone=55' . $num_wpp . '&text= Olá, acho que vi seu pet.  ';
+} else {
+    $urlWpp = 'https://web.whatsapp.com/send?phone=55' . $num_wpp . '&text= Olá, acho que vi seu pet.';
 }
 
 ?>
@@ -41,8 +61,8 @@ if($smtp->execute(array("$hash"))){
             </div>
             <div class="col-md-6">
                 <h2>Sobre o pet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus sed magna sagittis sodales. Vivamus volutpat leo nec nibh eleifend, in ultrices justo tristique. Maecenas malesuada fringilla tellus at efficitur. Fusce rutrum tempor nunc sed hendrerit. Integer tristique libero eget arcu pellentesque, eu sagittis metus maximus. Suspendisse potenti. Nam quis magna eu nulla suscipit tempus.</p>
-                <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO" class="btn btn-success"><i class="fab fa-whatsapp"></i> Achou? Entre em contato</a>
+                <p><?php echo $perdido['descricao']; ?></p>
+                <a href="<?php echo $urlWpp ?>" class="btn btn-success"><i class="fab fa-whatsapp"></i> Achou? Entre em contato</a>
             </div>
         </div>
     </section>

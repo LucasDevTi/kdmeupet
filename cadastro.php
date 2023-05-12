@@ -46,7 +46,7 @@ if (isset($_SESSION['MSG_TENTATIVA_CADASTRO']) && isset($_SESSION['MSG_TENTATIVA
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
             </div>
             <div class="mb-3">
-                <label for="telefone" class="form-label">Telefone</label>
+                <label for="telefone" class="form-label">Número whatsapp*</label>
                 <input type="tel" class="form-control phone-mask" id="telefone" name="telefone" placeholder="Seu telefone" required>
             </div>
             <div class="mb-3">

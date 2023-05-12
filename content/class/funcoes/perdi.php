@@ -92,7 +92,7 @@ if (isset($_POST)) {
         $tipo = htmlspecialchars($_POST['tipo'], ENT_QUOTES);
 
 
-        if ($smtp->execute(array("$nome_pet", "$descricao", "$caminho_novo_arquivo", "$caminho_original_arquivo", "$recompensa", "$valor", $_SESSION['identificador'], "$hash", $tipo, 1, 0))) {
+        if ($smtp->execute(array("$nome_pet", "$descricao", "$caminho_novo_arquivo", "$caminho_original_arquivo", "$recompensa", "$valor", $_SESSION['identificador'], "$hash", $tipo, $cidade, $uf, 1, 0))) {
 
             header('Location: ../../../index.php');
         } else {
