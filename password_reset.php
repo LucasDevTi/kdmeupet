@@ -31,25 +31,19 @@ if (isset($_SESSION['MSG_TENTATIVA_LOGIN']) && isset($_SESSION['MSG_TENTATIVA_LO
 }
 
 ?>
-
 <style>
-    .footer{
+    .footer {
         position: fixed;
     }
 </style>
+
 <body>
 
     <?php echo $Menu->nav(); ?>
 
     <section class="my-5 d-flex flex-column justify-content-center align-items-center">
-        <?php if ($flag_alerta) { ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong><?php echo $msg ?></strong> <?php echo $msg_2 ?>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        <?php } ?>
         <div class="alert alert-info alert-dismissible fade show" id="msg_email" style="display:none;" role="alert">
-            <strong>Um e-mail foi enviado para você redefinir sua senha!</strong>
+            <p id="alert_email"><strong>Um e-mail foi enviado para você redefinir sua senha!</strong></p>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <form method="POST" action="/content/class/funcoes/login.php" class="p-4 border rounded-3 d-flex justify-content-end flex-wrap" style="max-width: 400px;">
@@ -58,17 +52,8 @@ if (isset($_SESSION['MSG_TENTATIVA_LOGIN']) && isset($_SESSION['MSG_TENTATIVA_LO
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
             </div>
-            <div class="mb-3 flex-fill">
-                <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha" required>
-            </div>
             <div class="mb-3">
-                <a href="password_reset.php">Esqueceu sua senha?</a>
-                <!-- <button type="button" class="btn btn-link" onclick="redefinirSenha(this);">Esqueci minha senha</button> -->
-            </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary me-3">Entrar</button>
-                <a href="cadastro.php" class="btn btn-outline-secondary">Cadastre-se</a>
+                <input type="button" onclick="redefinirSenha()" id="bt_email" class="btn btn-success me-3" value="Enviar email de redefinição">
             </div>
         </form>
     </section>
@@ -79,19 +64,50 @@ if (isset($_SESSION['MSG_TENTATIVA_LOGIN']) && isset($_SESSION['MSG_TENTATIVA_LO
             $(".alert").alert('close');
         }, 5000);
 
-        // function redefinirSenha(link) {
-        //     $.ajax({
-        //         type: 'POST',
-        //         dataType: 'json',
-        //         url: '/content/class/sendEmail.php',
-        //         async: true,
-        //         data:   
-        //     });
-        //     $('#msg_email').show("slow");
-        //     link.setAttribute("disabled", "disabled");
-        //     link.style.opacity = "0.5"; // exemplo de alteração visual
-        // }
+        function redefinirSenha(link) {
+            var email = $('#email').val()
+            console.log(email)
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: '/content/class/funcoes/sendEmail.php',
+                async: true,
+                data: {
+                    email: email
+                },
+
+                success: function(response) {
+                    try {
+                        if (response.success) {
+                            $('#alert_email').text("");
+                            $('#alert_email').text("enviado");
+                            $('#msg_email').show("slow");
+
+                            document.getElementById("bt_email").disabled = true;
+                        } else {
+                            $('#alert_email').text("");
+                            $('#alert_email').text("não enviado");
+                            $('#msg_email').show("slow");
+                        }
+
+                    } catch (err) {
+                        $('#alert_email').text("");
+                        $('#alert_email').text("não enviado");
+                        $('#msg_email').show("slow");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log("erou")
+                }
+            });
+
+
+        }
     </script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
 </body>
 <?php
 echo $End->final();
