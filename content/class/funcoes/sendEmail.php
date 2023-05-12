@@ -5,7 +5,7 @@ $pdo = $bd->conectar();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
             
-require 'vendor/autoload.php';
+require '../../../vendor/autoload.php';
 
 if(!empty($_POST) && ($_SERVER['REQUEST_METHOD']) == 'POST'){
 
