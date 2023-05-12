@@ -15,37 +15,22 @@ echo $Init->cabecalho();
 
 $pdo = $bd->conectar();
 
+$ip = $_SERVER['REMOTE_ADDR'];
+$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$ip"));
+$cidade = $geo['geoplugin_city'];
+$uf     = $geo['geoplugin_regionCode'];
 
-if (isset($_SESSION['identificador'])) {
-    $id = $_SESSION['identificador'];
-    $stmt = $pdo->prepare("SELECT cidade, uf, ip FROM `usuarios` WHERE id = :ID");
-    $stmt->execute(array(
-        ':ID' => $id
-    ));
-
-    if ($stmt->rowCount() > 0) {
-
-        $user = $stmt->fetchAll();
-        $cidade = $user[0]['cidade'];
-        $uf = $user[0]['uf'];
-
-        if ((isset($cidade) && !empty($cidade)) && (isset($uf) && !empty($uf))) {
-            $stmt = $pdo->prepare("SELECT * FROM `perdidos` WHERE tipo_animal = 3 AND cidade = '$cidade' AND uf = '$uf' ORDER BY `id` DESC LIMIT 30");
-            $stmt->execute();
-            $animais = $stmt->fetchAll();
-        } else {
-            $stmt = $pdo->prepare("SELECT * FROM `perdidos` WHERE tipo_animal = 3 ORDER BY `id` DESC LIMIT 30");
-            $stmt->execute();
-            $animais = $stmt->fetchAll();
-        }
-    }
+if ((isset($cidade) && !empty($cidade)) && (isset($uf) && !empty($uf))) {
+    $cidade = strtolower($cidade);
+    $uf = strtolower($uf);
+    $stmt = $pdo->prepare("SELECT * FROM `perdidos` WHERE tipo_animal = 3 AND cidade = '$cidade' AND uf = '$uf' ORDER BY `id` DESC LIMIT 30");
+    $stmt->execute();
+    $animais = $stmt->fetchAll();
 } else {
     $stmt = $pdo->prepare("SELECT * FROM `perdidos` WHERE tipo_animal = 3 ORDER BY `id` DESC LIMIT 30");
     $stmt->execute();
     $animais = $stmt->fetchAll();
 }
-
-
 ?>
 
 <body>
