@@ -23,7 +23,7 @@ $pdo = $bd->conectar();
 ?>
 <style>
     .footer {
-        position: fixed;
+        position: static !important;
     }
 </style>
 
