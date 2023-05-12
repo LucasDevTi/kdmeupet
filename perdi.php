@@ -2,22 +2,30 @@
 require_once __DIR__ . '/app/init.php';
 require_once __DIR__ . '/app/end.php';
 require_once __DIR__ . '/app/menu.php';
+require_once __DIR__ . '/app/footer.php';
 
 use App\End;
 use App\Head;
 use App\Menu;
+use App\Footer;
 
 $Init = new Head();
 $End = new End();
 $Menu = new Menu();
+$Footer = new Footer();
 
 echo $Init->cabecalho();
 if (!isset($_SESSION['nome'])) {
-	echo "<script>window.location.href='" . PL_PATH_ADMIN . "/login.php'</script>";
+    echo "<script>window.location.href='" . PL_PATH_ADMIN . "/login.php'</script>";
     $_SESSION['pagina_anterior'] = 'perdi.php';
 }
 $pdo = $bd->conectar();
 ?>
+<style>
+    .footer {
+        position: fixed;
+    }
+</style>
 
 <body>
     <?php echo $Menu->nav(); ?>
@@ -63,6 +71,7 @@ $pdo = $bd->conectar();
             </div>
         </div>
     </section>
+    <?php echo $Footer->rodape(); ?>
 
     <script>
         $(document).ready(function() {

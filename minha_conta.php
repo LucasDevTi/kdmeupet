@@ -2,14 +2,17 @@
 require_once __DIR__ . '/app/init.php';
 require_once __DIR__ . '/app/end.php';
 require_once __DIR__ . '/app/menu.php';
+require_once __DIR__ . '/app/footer.php';
 
 use App\End;
 use App\Head;
 use App\Menu;
+use App\Footer;
 
 $Init = new Head();
 $End = new End();
 $Menu = new Menu();
+$Footer = new Footer();
 
 echo $Init->cabecalho();
 if (!isset($_SESSION['nome'])) {
@@ -21,22 +24,21 @@ $pdo = $bd->conectar();
 $sql = "SELECT * FROM usuarios WHERE id = ?";
 $smtp = $pdo->prepare($sql);
 
-if($smtp->execute(array($_SESSION['identificador']))){
+if ($smtp->execute(array($_SESSION['identificador']))) {
     $usuario = $smtp->fetch();
 }
 ?>
+<style>
+    .footer {
+        position: fixed;
+    }
+</style>
 
 <body>
     <?php echo $Menu->nav(); ?>
     <section class="container mt-5">
         <div class="row">
-            <div class="col-md-4">
-                <div class="text-center">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle img-thumbnail" alt="Imagem de perfil">
-                    <h5 class="mt-3">Alterar foto de perfil</h5>
-                    <input type="file" id="foto" name="foto" class="form-control-file">
-                </div>
-            </div>
+
             <div class="col-md-8">
                 <h3>Informações pessoais</h3>
                 <form method="POST" action="/content/class/funcoes/edita_cadastro.php">
@@ -65,6 +67,7 @@ if($smtp->execute(array($_SESSION['identificador']))){
             </div>
         </div>
     </section>
+    <?php echo $Footer->rodape(); ?>
 
 </body>
 <?php

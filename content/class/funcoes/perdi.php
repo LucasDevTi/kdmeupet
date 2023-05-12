@@ -54,7 +54,24 @@ if (isset($_POST)) {
         $caminho_original_arquivo = '../../../uploads/' . $nome_original_arquivo;
         move_uploaded_file($caminho_temporario, $caminho_original_arquivo);
 
-        $sql = "INSERT INTO perdidos (id, nome_pet, descricao, foto, foto_original, recompensa, valor, id_usuario, hash, tipo_animal, status, excluido) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$ip"));
+        $cidade = $geo['geoplugin_city'];
+        $uf     = $geo['geoplugin_regionCode'];
+
+        if (isset($cidade) && !empty($cidade)) {
+            $cidade = strtolower($cidade);
+        } else {
+            $cidade = "";
+        }
+
+        if (isset($uf) && !empty($uf)) {
+            $uf = strtolower($uf);
+        } else {
+            $uf = "";
+        }
+
+        $sql = "INSERT INTO perdidos (id, nome_pet, descricao, foto, foto_original, recompensa, valor, id_usuario, hash, tipo_animal, cidade, uf, status, excluido) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $smtp = $pdo->prepare($sql);
 
         $hash = rand() . uniqid();
@@ -71,12 +88,11 @@ if (isset($_POST)) {
         $caminho_novo_arquivo = str_replace("../", "", $caminho_novo_arquivo);
 
         $caminho_original_arquivo = str_replace("../", "", $caminho_original_arquivo);
-        
-        $tipo = htmlspecialchars($_POST['tipo'], ENT_QUOTES);
-        
-        // var_dump('$nome_pet');
 
-        if ($smtp->execute(array("$nome_pet", "$descricao", "$caminho_novo_arquivo", "$caminho_original_arquivo" ,"$recompensa", "$valor", $_SESSION['identificador'], "$hash", $tipo, 1, 0))) {
+        $tipo = htmlspecialchars($_POST['tipo'], ENT_QUOTES);
+
+
+        if ($smtp->execute(array("$nome_pet", "$descricao", "$caminho_novo_arquivo", "$caminho_original_arquivo", "$recompensa", "$valor", $_SESSION['identificador'], "$hash", $tipo, 1, 0))) {
 
             header('Location: ../../../index.php');
         } else {

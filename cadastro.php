@@ -26,8 +26,6 @@ if (isset($_SESSION['MSG_TENTATIVA_CADASTRO']) && isset($_SESSION['MSG_TENTATIVA
     unset($_SESSION['MSG_TENTATIVA_CADASTRO']);
     unset($_SESSION['MSG_TENTATIVA_CADASTRO_2']);
 }
-$flag_alerta = true;
-
 ?>
 
 <body>
@@ -49,7 +47,7 @@ $flag_alerta = true;
             </div>
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control phone-mask" id="telefone" name="telefone" placeholder="Seu telefone">
+                <input type="tel" class="form-control phone-mask" id="telefone" name="telefone" placeholder="Seu telefone" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email*</label>

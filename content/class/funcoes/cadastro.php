@@ -14,10 +14,29 @@ if (isset($_POST)) {
     
     $senha = password_hash(htmlspecialchars($_POST['senha'], ENT_QUOTES), PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO usuarios (id, nome, email, telefone, senha, status, excluido) VALUES (NULL, ?, ?, ?, ?, ?, ?)";
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$ip"));
+    $cidade = $geo['geoplugin_city'];
+    $uf     = $geo['geoplugin_regionCode'];
+
+    if(isset($cidade) && !empty($cidade)){
+        $cidade = strtolower($cidade);
+    }else{
+        $cidade = "";
+
+    }
+
+    if(isset($uf) && !empty($uf)){
+        $uf = strtolower($uf);
+    }else{
+        $uf = "";
+
+    }
+
+    $sql = "INSERT INTO usuarios (id, nome, email, telefone, senha, cidade, uf, ip, status, excluido) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $smtp = $pdo->prepare($sql);
 
-    if($smtp->execute(array("$nome", "$email", "$telefone", "$senha", 1, 0))){
+    if($smtp->execute(array("$nome", "$email", "$telefone", "$senha", "$cidade", "$uf", "$ip", 1, 0))){
         // session_start();
         $_SESSION['nome'] = $nome;
         $_SESSION['identificador'] = $pdo->lastInsertId();

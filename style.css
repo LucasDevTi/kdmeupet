@@ -20,6 +20,10 @@ body {
     .footer {
       padding: 20px;
       font-size: 14px;
+        position: static !important;
+
+        margin-top: 1em;
+
     }
   }
   

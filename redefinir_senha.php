@@ -29,7 +29,7 @@ if (isset($_SESSION['MSG_TENTATIVA_LOGIN']) && isset($_SESSION['MSG_TENTATIVA_LO
     unset($_SESSION['MSG_TENTATIVA_LOGIN']);
     unset($_SESSION['MSG_TENTATIVA_LOGIN_2']);
 }
-
+$token = $_GET['token'];
 ?>
 
 <style>
@@ -63,6 +63,7 @@ if (isset($_SESSION['MSG_TENTATIVA_LOGIN']) && isset($_SESSION['MSG_TENTATIVA_LO
                 <input type="password" class="form-control" id="confirma_senha" name="confirma_senha" placeholder="Sua senha" required>
                 <small id="info_confirma_senha" style="display:none;"></small>
             </div>
+            <input type="hidden" name="token" value ='<?php echo $token ?>'>
             <div class="mb-3">
                 <input type="button" class="btn btn-success me-3" style="color:white; font-weight:600;" onclick="enviarSenha()" value="Redefinir senha">
             </div>

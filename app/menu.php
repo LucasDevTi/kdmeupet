@@ -38,10 +38,7 @@ class Menu
                             <a class="nav-link" href="passaros.php">Pássaro</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Pesquise por um pet procurado" aria-label="Pesquisar">
-                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button> -->
-                    </form>
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="perdi.php">Perdi meu Pet</a>
