@@ -70,10 +70,10 @@ if (isset($_POST)) {
         } else {
             $uf = "";
         }
-
-        $sql = "INSERT INTO perdidos (id, nome_pet, descricao, foto, foto_original, recompensa, valor, id_usuario, hash, tipo_animal, cidade, uf, status, excluido) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+      
+        $sql = "INSERT INTO perdidos (id, nome_pet, descricao, foto, foto_original, recompensa, valor, id_usuario, hash, tipo_animal, cidade, uf, status, excluido, aprovado) VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $smtp = $pdo->prepare($sql);
-
+        
         $hash = rand() . uniqid();
 
         $nome_pet = htmlspecialchars($_POST['nome'], ENT_QUOTES);
@@ -91,8 +91,7 @@ if (isset($_POST)) {
 
         $tipo = htmlspecialchars($_POST['tipo'], ENT_QUOTES);
 
-
-        if ($smtp->execute(array("$nome_pet", "$descricao", "$caminho_novo_arquivo", "$caminho_original_arquivo", "$recompensa", "$valor", $_SESSION['identificador'], "$hash", $tipo, $cidade, $uf, 1, 0))) {
+        if ($smtp->execute(array("$nome_pet", "$descricao", "$caminho_novo_arquivo", "$caminho_original_arquivo", "$recompensa", "$valor", $_SESSION['identificador'], "$hash", $tipo, "$cidade", "$uf", 1, 0, 0))) {
 
             header('Location: ../../../index.php');
         } else {
