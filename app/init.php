@@ -34,6 +34,7 @@ class Head{
         <script src="https://kit.fontawesome.com/bd7a79c4c7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+        <link rel="shortcut icon" href="../uploads/src/favicon.ico" type="image/x-icon">
         </head>';
     }
 }

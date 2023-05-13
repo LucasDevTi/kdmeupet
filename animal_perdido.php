@@ -58,6 +58,10 @@ if ($is_mobile) {
         <div class="row">
             <div class="col-md-6">
                 <img src="<?php echo $foto ?>" class="img-fluid rounded">
+                <div class="redes_kdmeupet">
+                    <a href="https://www.instagram.com/ikdmeupet/" target="_blank"><i class="fa fa-instagram insta_kdmeupet icons_meupet"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100092463728182" target="_blank"><i class="fa fa-facebook face_kdmeupet icons_meupet"></i></a>
+                </div>
             </div>
             <div class="col-md-6">
                 <h2>Sobre o pet</h2>

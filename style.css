@@ -13,26 +13,61 @@ body {
     color: #fff;
     padding: 1em;
     margin-top: 3em;
-    
+
 }
+
+.icon_footer {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1.2em;
+}
+
+a.redes_sociais {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.redes_kdmeupet {
+    margin-top: 2em;
+}
+
+.icons_meupet {
+    font-size: 2em;
+    padding-right: 0.5em;
+}
+
+.insta_kdmeupet {
+    background-image: linear-gradient(to bottom right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.face_kdmeupet {
+    background: linear-gradient(to right, #3b5998, #1877f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 767px) {
+
     /* estilos para dispositivos móveis */
     .footer {
-      padding: 20px;
-      font-size: 14px;
+        padding: 20px;
+        font-size: 14px;
         position: static !important;
 
         margin-top: 1em;
 
     }
-  }
-  
+}
+
 @media (min-width: 768px) {
     .nav-link {
         color: white;
         font-size: 1.2em;
         font-weight: 600;
-        
+
     }
 
     .nav-link:hover {
